@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.aqpup.payme.LoanActivity">
+
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Mis Prestamos"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="2dp"
+        android:background="@android:color/holo_blue_dark">
+        <TextView
+            android:text="Nombre"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Monto"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Fecha Pago"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/ibAddLoan"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvLoan"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>
